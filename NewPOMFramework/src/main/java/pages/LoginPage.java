@@ -1,6 +1,8 @@
 package pages;
 
-public class LoginPage {
+import wrapper.ProjectSpecificWrapper;
+
+public class LoginPage extends ProjectSpecificWrapper{
 
 	public LoginPage enterUserName(String uName) {	
 		enterById("username", uName);
@@ -14,7 +16,7 @@ public class LoginPage {
 	public HomePage clickLogin() {
 		clickByClassName("decorativeSubmit");
 		return new HomePage();
-		
+		     
 	}	
 
 	

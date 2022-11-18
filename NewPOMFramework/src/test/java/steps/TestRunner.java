@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions (features ="src/test/java/features", 
 	 	glue ="steps",
-	 	//tags = "@Smoke"
+	 	//tags = "@Smoke" 
 	 	tags = {"@Smoke"},
 	 	plugin = {"html:reports"}
 		//snippets = SnippetType.CAMELCASE
@@ -15,5 +15,5 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	
 	  
 	
-}
+} 
       
